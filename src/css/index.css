@@ -1,0 +1,107 @@
+@import "./m3/tokens.css";
+@import "./m3/colors.module.css";
+@import "./m3/typography.module.css";
+@import "./m3/theme.light.css";
+@import "./m3/theme.dark.css";
+
+@import "./fonts.css";
+
+:root {
+  --md-sys-elevation-1: 0 1px 3px var(--md-sys-color-shadow);
+  --md-sys-elevation-2: 0 2px 3px var(--md-sys-color-shadow);
+  --md-sys-elevation-3: 0 3px 3px var(--md-sys-color-shadow);
+
+  --md-sys-state-hover-state-layer-opacity: 0.08;
+  --md-sys-state-focus-state-layer-opacity: 0.12;
+  --md-sys-state-pressed-state-layer-opacity: 0.12;
+  --md-sys-state-dragged-state-layer-opacity: 0.16;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: var(--md-sys-color-background);
+  color: var(--md-sys-color-on-background);
+  font-family: Roboto;
+}
+
+hr {
+  width: 100%;
+}
+
+.c-side-sheet {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background-color: var(--md-sys-color-surface-variant);
+  color: var(--md-sys-color-on-surface-variant);
+}
+
+.c-side-sheet__headline {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+}
+
+.o-pane__container {
+  display: flex;
+  height: 100%;
+}
+
+.o-pane--flexible {
+  padding: 1rem;
+}
+
+.o-pane--fixed {
+  width: 30%;
+  min-width: 300px;
+}
+
+.o-interactive::after {
+  content: "";
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  background-color: var(--md-sys-color-on-surface);
+}
+
+.o-interactive.o-interactive--active::after,
+.o-interactive--active .o-interactive::after {
+  background-color: var(--md-sys-color-on-surface-variant);
+}
+
+.o-interactive.o-interactive--active,
+.o-interactive--active .o-interactive {
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+
+.o-interactive:hover::after {
+  opacity: var(--md-sys-state-hover-state-layer-opacity);
+}
+
+.o-interactive:active::after {
+  opacity: var(--md-sys-state-focus-state-layer-opacity);
+}
+
+.u-flex-filler {
+  flex-grow: 1;
+}
+
+.u--square {
+  /* aspect-ratio: 2 / 1; */
+}

@@ -1,0 +1,27 @@
+.c-modal__backdrop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.c-modal {
+  position: fixed;
+  top: 3rem;
+  left: 50%;
+  width: 20rem;
+  margin-left: -10rem;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: var(--md-sys-color-surface);
+}
+
+.c-modal > *:first-child {
+  margin-top: 0;
+}
+
+.c-modal__headline {
+  font-weight: normal;
+}

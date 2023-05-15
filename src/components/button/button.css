@@ -1,0 +1,124 @@
+.c-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background-color: transparent;
+  color: var(--md-sys-color-primary);
+  font-weight: var(--md-sys-typescale-button-weight);
+  font-size: var(--md-sys-typescale-button-size);
+  line-height: var(--md-sys-typescale-button-line-height);
+  transform: translateZ(0);
+}
+
+.c-button--with-icon {
+  padding-right: 16px;
+}
+
+.c-button--icon-only {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+}
+
+.c-button[disabled] {
+  opacity: 0.38;
+  pointer-events: none;
+}
+
+.c-button__icon {
+  margin-right: 8px;
+}
+
+/** VARIANTS **/
+.c-button--fab {
+  position: fixed;
+  right: 16px;
+  bottom: calc(80px + 16px);
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+
+  background-color: var(--md-sys-color-primary-container);
+  color: var(--md-sys-color-on-primary-container);
+
+  box-shadow: var(--md-sys-elevation-3);
+}
+
+.c-button--elevated {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--md-sys-color-surface-1);
+  color: var(--md-sys-color-on-surface);
+  box-shadow: var(--md-sys-elevation-1);
+}
+.c-button--elevated.c-button--with-icon {
+  padding-left: 16px;
+}
+
+.c-button--filled {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--md-sys-color-primary);
+  color: var(--md-sys-color-on-primary);
+}
+.c-button--filled.c-button--with-icon {
+  padding-left: 16px;
+}
+.c-button--filled::after {
+  background-color: var(--md-sys-color-on-primary);
+}
+
+.c-button--tonal {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
+}
+.c-button--tonal.c-button--with-icon {
+  padding-left: 16px;
+}
+.c-button--tonal::after {
+  background-color: var(--md-sys-color-on-secondary-container);
+}
+
+.c-button--tertiary {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--md-sys-color-tertiary);
+  color: var(--md-sys-color-on-tertiary);
+}
+.c-button--tertiary.c-button--with-icon {
+  padding-left: 16px;
+}
+.c-button--tertiary::after {
+  background-color: var(--md-sys-color-on-tertiary);
+}
+
+.c-button--outlined {
+  padding-left: 24px;
+  padding-right: 24px;
+  border-color: var(--md-sys-color-outline);
+  color: var(--md-sys-color-primary);
+}
+.c-button--outlined:active {
+  border-color: var(--md-sys-color-primary);
+}
+.c-button--outlined.c-button--with-icon {
+  padding-left: 16px;
+}
+.c-button--outlined::after {
+  background-color: var(--md-sys-color-primary);
+}
+
+.c-button--pay-confirm {
+  padding: 2rem;
+  width: 100%;
+}

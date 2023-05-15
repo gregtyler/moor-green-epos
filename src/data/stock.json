@@ -1,0 +1,18 @@
+{
+  "categories": {
+    "beer": { "label": "Beer & Cider", "icon": "sports_bar" },
+    "wine": { "label": "Wine", "icon": "wine_bar" },
+    "spirits": { "label": "Spirits", "icon": "liquor" },
+    "soft-drinks": { "label": "Soft Drinks", "icon": "water_full" },
+    "food": { "label": "Food", "icon": "lunch_dining" }
+  },
+  "items": {
+    "1000": { "label": "Glasshouse Pint", "category": "beer", "price": 500 },
+    "1001": { "label": "Glasshouse Half", "category": "beer", "price": 375 },
+    "1002": { "label": "Wine Glass", "category": "wine", "price": 400 },
+    "1003": { "label": "J2O", "category": "soft-drinks", "price": 225 },
+    "1004": { "label": "Cans/Juice", "category": "soft-drinks", "price": 100 },
+    "1005": { "label": "Crisps", "category": "food", "price": 100 },
+    "1006": { "label": "Chocolate", "category": "food", "price": 100 }
+  }
+}
