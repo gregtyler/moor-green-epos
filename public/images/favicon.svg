@@ -1,15 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 512 512">
-  <rect x="0" y="0" rx="0" ry="0" width="512" height="512" fill="#efedea"/>
-  <rect x="85.333" y="-0" rx="0" ry="0" width="341.333" height="512" fill="#9d907e"/>
-
-  <circle r="35" fill="#efedea" cx="170.667" cy="16"/>
-  <circle r="35" fill="#efedea" cx="170.667" cy="136"/>
-  <circle r="35" fill="#efedea" cx="170.667" cy="256"/>
-  <circle r="35" fill="#efedea" cx="170.667" cy="376"/>
-  <circle r="35" fill="#efedea" cx="170.667" cy="496"/>
-  <circle r="35" fill="#efedea" cx="341.333" cy="16"/>
-  <circle r="35" fill="#efedea" cx="341.333" cy="136"/>
-  <circle r="35" fill="#efedea" cx="341.333" cy="256"/>
-  <circle r="35" fill="#efedea" cx="341.333" cy="376"/>
-  <circle r="35" fill="#efedea" cx="341.333" cy="496"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180"><path style="stroke:#167d16;stroke-width:3.75;fill:#5dc328" d="M382 295c-2 18-2 37-5 55-4 17-7 34-16 49-6 11-14 21-25 27-23 14-52 6-70-14a54 54 0 0 1-15-50c3-17 17-29 31-38 28-19 64-24 97-29h3z" transform="translate(-210 -293)"/><path style="stroke:#167d16;stroke-width:3.75;fill:none" d="m371 307-97 104M309 331c6 23 20 35 43 38M286 350c6 27 23 41 49 44M269 375c5 22 20 34 43 38M334 318c4 15 14 24 29 26M212 419c20 12 39 10 57-4" transform="translate(-210 -293)"/></svg>
