@@ -3,7 +3,7 @@
     "beer": { "label": "Beer & Cider", "icon": "sports_bar" },
     "wine": { "label": "Wine", "icon": "wine_bar" },
     "spirits": { "label": "Spirits", "icon": "liquor" },
-    "soft-drinks": { "label": "Soft Drinks", "icon": "water_full" },
+    "soft-drinks": { "label": "Soft Drinks", "icon": "local_drink" },
     "food": { "label": "Food", "icon": "lunch_dining" }
   },
   "items": {

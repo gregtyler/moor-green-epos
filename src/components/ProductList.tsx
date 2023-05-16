@@ -3,8 +3,7 @@ import { categories, items } from "../data/stock";
 import Price from "./Price";
 import Card from "./card/Card";
 import CardGrid from "./card/CardGrid";
-
-type FilterNames = "default" | keyof typeof categories;
+import { FilterNames } from "./App";
 
 interface Props extends HTMLAttributes<HTMLElement> {
   filter: FilterNames;
@@ -19,23 +18,21 @@ const getStock = (filter: FilterNames) => {
   }
 };
 
-const ProductList = ({ filter, onAddItem }: Props) => {
+const ProductList = ({ filter, onAddItem, ...props }: Props) => {
   const stock = getStock(filter);
 
   return (
-    <CardGrid>
-      {stock.map((item) => (
-        <Card
-          key={item.label}
-          onClick={() => onAddItem(item.id)}
-          className="u--square"
-        >
-          <strong>{item.label}</strong>
-          <br />
-          <Price value={item.price} />
-        </Card>
-      ))}
-    </CardGrid>
+    <div {...props}>
+      <CardGrid>
+        {stock.map((item) => (
+          <Card key={item.label} onClick={() => onAddItem(item.id)}>
+            <strong>{item.label}</strong>
+            <br />
+            <Price value={item.price} />
+          </Card>
+        ))}
+      </CardGrid>
+    </div>
   );
 };
 

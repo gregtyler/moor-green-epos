@@ -2,7 +2,7 @@
 @import "./m3/colors.module.css";
 @import "./m3/typography.module.css";
 @import "./m3/theme.light.css";
-@import "./m3/theme.dark.css";
+/* @import "./m3/theme.dark.css"; */
 
 @import "./fonts.css";
 
@@ -57,10 +57,6 @@ hr {
   height: 100%;
 }
 
-.o-pane--flexible {
-  padding: 1rem;
-}
-
 .o-pane--fixed {
   width: 30%;
   min-width: 300px;
@@ -100,8 +96,4 @@ hr {
 
 .u-flex-filler {
   flex-grow: 1;
-}
-
-.u--square {
-  /* aspect-ratio: 2 / 1; */
 }
