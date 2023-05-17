@@ -25,7 +25,7 @@ const ProductList = ({ filter, onAddItem, ...props }: Props) => {
     <div {...props}>
       <CardGrid>
         {stock.map((item) => (
-          <Card key={item.label} onClick={() => onAddItem(item.id)}>
+          <Card key={item.id} onClick={() => onAddItem(item.id)}>
             <strong>{item.label}</strong>
             <br />
             <Price value={item.price} />

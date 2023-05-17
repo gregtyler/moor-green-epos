@@ -96,4 +96,5 @@ hr {
 
 .u-flex-filler {
   flex-grow: 1;
+  overflow: auto;
 }

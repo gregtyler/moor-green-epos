@@ -24,6 +24,7 @@ const NavigationTray = ({ value, onUpdate }: Props) => {
       </span>
       {Object.entries(categories).map(([id, category]) => (
         <span
+          key={id}
           className={`c-navigation-tray__item ${
             id === value ? "c-navigation-tray__item--active" : ""
           }`}

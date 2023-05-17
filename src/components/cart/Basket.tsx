@@ -52,7 +52,7 @@ const Basket = ({ items, onPromptRemove }: Props) => {
               </div>
             </div>
             <IconButton
-              icon="delete"
+              icon="remove"
               variant="tonal"
               onClick={() => onPromptRemove(item.id)}
             />
