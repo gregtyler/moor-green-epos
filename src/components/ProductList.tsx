@@ -1,9 +1,10 @@
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import { categories, items } from "../data/stock";
 import Price from "./Price";
 import Card from "./card/Card";
 import CardGrid from "./card/CardGrid";
 import { FilterNames } from "./App";
+import Icon from "./Icon";
 
 interface Props extends HTMLAttributes<HTMLElement> {
   filter: FilterNames;
@@ -18,6 +19,14 @@ const getStock = (filter: FilterNames) => {
   }
 };
 
+const getCategoryIcon = (category: string): ReactNode => {
+  if (category in categories) {
+    return <Icon style={{ float: "right" }}></Icon>;
+  } else {
+    return "";
+  }
+};
+
 const ProductList = ({ filter, onAddItem, ...props }: Props) => {
   const stock = getStock(filter);
 
@@ -25,10 +34,18 @@ const ProductList = ({ filter, onAddItem, ...props }: Props) => {
     <div {...props}>
       <CardGrid>
         {stock.map((item) => (
-          <Card key={item.id} onClick={() => onAddItem(item.id)}>
-            <strong>{item.label}</strong>
-            <br />
-            <Price value={item.price} />
+          <Card
+            key={item.id}
+            orientation="vertical"
+            onClick={() => onAddItem(item.id)}
+          >
+            <div className="c-card--product">
+              <strong className="u-flex-filler">{item.label}</strong>
+              <div>
+                {getCategoryIcon(item.category)}
+                <Price value={item.price} />
+              </div>
+            </div>
           </Card>
         ))}
       </CardGrid>

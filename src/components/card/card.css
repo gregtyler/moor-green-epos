@@ -37,6 +37,12 @@
   border-radius: 12px;
 }
 
+.c-card--product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .c-card__content {
   flex: 1;
   padding: 16px;
