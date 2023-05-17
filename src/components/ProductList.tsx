@@ -12,7 +12,7 @@ interface Props extends HTMLAttributes<HTMLElement> {
 
 const getStock = (filter: FilterNames) => {
   if (filter === "default") {
-    return items;
+    return items.filter((i) => i.defaultView);
   } else {
     return items.filter((i) => i.category === filter);
   }

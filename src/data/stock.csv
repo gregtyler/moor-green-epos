@@ -1,83 +1,84 @@
-1001,Glasshouse Pint,beer,5.00
-1002,Glasshouse Half,beer,2.75
-1003,Thatcher’s Pint,beer,3.00
-1004,Thatcher’s Half,beer,1.75
-1005,Carling Pint,beer,3.00
-1006,Carling Half,beer,1.75
-1007,Guinness Pint,beer,3.75
-1008,Guinness Half,beer,2.25
-1009,Trad Pint,beer,3.75
-1010,Trad Half,beer,2.00
-1011,Glasshouse Can,beer,4.50
-1012,Bathams Best,beer,3.00
-1013,London Pride,beer,3.00
-1014,Mild Can,beer,3.00
-1015,Red Stripe,beer,3.00
-1016,Peroni,beer,3.00
-1017,Old Mount Cider,beer,3.00
-1018,Becks Blue,beer,2.50
-1019,Peroni Zero,beer,2.50
-2001,Wine Glass,wine,4.00
-2002,Wine Bottle,wine,13.50
-2003,Prosecco Small,wine,4.50
-2004,Prosecco Large,wine,14.50
-3001,Gin Double,spirits,3.00
-3002,Gin Single,spirits,2.00
-3003,Vodka Double,spirits,3.00
-3004,Vodka Single,spirits,2.00
-3005,Bacardi Double,spirits,3.00
-3006,Bacardi Single,spirits,2.00
-3007,Wray & Nephew Double,spirits,4.00
-3008,Wray & Nephew Single,spirits,3.00
-3009,Appleton Double,spirits,3.50
-3010,Appleton Single,spirits,2.50
-3011,Bells Double,spirits,3.00
-3012,Bells Single,spirits,2.00
-3013,Grouse Double,spirits,3.00
-3014,Grouse Single,spirits,2.00
-3015,Jameson Double,spirits,3.50
-3016,Jameson Single,spirits,2.50
-3017,Brandy Double,spirits,4.00
-3018,Brandy Single,spirits,2.50
-3019,Jack Daniels Double,spirits,3.75
-3020,Jack Daniels Single,spirits,2.75
-3021,Southern Comfort Double,spirits,3.50
-3022,Southern Comfort Single,spirits,2.50
-3023,Captain Morgan Double,spirits,3.50
-3024,Captain Morgan Single,spirits,2.50
-3025,Baileys Double,spirits,3.50
-3026,Tia Maria Double,spirits,3.50
-3027,Tia Maria Single,spirits,2.50
-3028,Malibu Double,spirits,3.50
-3029,Malibu Single,spirits,2.50
-3030,Tequila Double,spirits,3.50
-3031,Tequila Single,spirits,2.00
-3032,Jagermeister Double,spirits,3.50
-3033,Jagermeister Single,spirits,2.50
-3034,Jagermeister Bomb,spirits,4.00
-3035,Hendricks Double,spirits,4.00
-3036,Hendricks Single,spirits,3.00
-3037,12 yr Malt Whisky Double,spirits,4.00
-3038,12 yr Malt Whisky Single,spirits,3.00
-3039,Pink Gin Double,spirits,3.00
-3040,Pink Gin Single,spirits,2.00
-3041,Woods Rum Double,spirits,4.00
-3042,Woods Rum Single,spirits,3.00
-3043,Pimms Double,spirits,3.00
-3044,Pimms Single,spirits,2.00
-4001,Full fat coke,soft-drinks,1.50
-4002,Diet Coke,soft-drinks,1.00
-4003,Can Pop,soft-drinks,1.00
-4004,Tonic Water,soft-drinks,1.25
-4005,J20,soft-drinks,2.00
-4006,Appletiser,soft-drinks,2.00
-4007,Orange Juice,soft-drinks,2.00
-4008,Costa iced coffee,soft-drinks,1.50
-4009,Water,soft-drinks,1.00
-4010,Lemonade glass,soft-drinks,1.00
-4011,Cordial Splash,soft-drinks,0.50
-4012,Coke splash,soft-drinks,0.50
-4013,Lemonade splash,soft-drinks,0.50
-4014,Red Bull,soft-drinks,2.00
-5001,Crisps/Snacks,food,1.00
-5002,Chocolate,food,1.00
+id,name,category,price,default
+1001,Glasshouse Pint,beer,5.00,Y
+1002,Glasshouse Half,beer,2.75,Y
+1003,Thatcher’s Pint,beer,3.00,Y
+1004,Thatcher’s Half,beer,1.75,Y
+1005,Carling Pint,beer,3.00,Y
+1006,Carling Half,beer,1.75,Y
+1007,Guinness Pint,beer,3.75,Y
+1008,Guinness Half,beer,2.25,Y
+1009,Trad Pint,beer,3.75,Y
+1010,Trad Half,beer,2.00,Y
+1011,Glasshouse Can,beer,4.50,N
+1012,Bathams Best,beer,3.00,Y
+1013,London Pride,beer,3.00,N
+1014,Mild Can,beer,3.00,N
+1015,Red Stripe,beer,3.00,Y
+1016,Peroni,beer,3.00,N
+1017,Old Mount Cider,beer,3.00,Y
+1018,Becks Blue,beer,2.50,N
+1019,Peroni Zero,beer,2.50,N
+2001,Wine Glass,wine,4.00,Y
+2002,Wine Bottle,wine,13.50,N
+2003,Prosecco Small,wine,4.50,N
+2004,Prosecco Large,wine,14.50,N
+3001,Gin Double,spirits,3.00,Y
+3002,Gin Single,spirits,2.00,N
+3003,Vodka Double,spirits,3.00,Y
+3004,Vodka Single,spirits,2.00,N
+3005,Bacardi Double,spirits,3.00,N
+3006,Bacardi Single,spirits,2.00,N
+3007,Wray & Nephew Double,spirits,4.00,Y
+3008,Wray & Nephew Single,spirits,3.00,N
+3009,Appleton Double,spirits,3.50,N
+3010,Appleton Single,spirits,2.50,N
+3011,Bells Double,spirits,3.00,N
+3012,Bells Single,spirits,2.00,N
+3013,Grouse Double,spirits,3.00,N
+3014,Grouse Single,spirits,2.00,N
+3015,Jameson Double,spirits,3.50,N
+3016,Jameson Single,spirits,2.50,N
+3017,Brandy Double,spirits,4.00,N
+3018,Brandy Single,spirits,2.50,N
+3019,Jack Daniels Double,spirits,3.75,N
+3020,Jack Daniels Single,spirits,2.75,N
+3021,Southern Comfort Double,spirits,3.50,N
+3022,Southern Comfort Single,spirits,2.50,N
+3023,Captain Morgan Double,spirits,3.50,N
+3024,Captain Morgan Single,spirits,2.50,N
+3025,Baileys Double,spirits,3.50,N
+3026,Tia Maria Double,spirits,3.50,N
+3027,Tia Maria Single,spirits,2.50,N
+3028,Malibu Double,spirits,3.50,N
+3029,Malibu Single,spirits,2.50,N
+3030,Tequila Double,spirits,3.50,N
+3031,Tequila Single,spirits,2.00,N
+3032,Jagermeister Double,spirits,3.50,N
+3033,Jagermeister Single,spirits,2.50,N
+3034,Jagermeister Bomb,spirits,4.00,N
+3035,Hendricks Double,spirits,4.00,N
+3036,Hendricks Single,spirits,3.00,N
+3037,12 yr Malt Whisky Double,spirits,4.00,N
+3038,12 yr Malt Whisky Single,spirits,3.00,N
+3039,Pink Gin Double,spirits,3.00,N
+3040,Pink Gin Single,spirits,2.00,N
+3041,Woods Rum Double,spirits,4.00,N
+3042,Woods Rum Single,spirits,3.00,N
+3043,Pimms Double,spirits,3.00,N
+3044,Pimms Single,spirits,2.00,N
+4001,Full fat coke,soft-drinks,1.50,N
+4002,Diet Coke,soft-drinks,1.00,N
+4003,Can Pop,soft-drinks,1.00,Y
+4004,Tonic Water,soft-drinks,1.25,Y
+4005,J20,soft-drinks,2.00,Y
+4006,Appletiser,soft-drinks,2.00,N
+4007,Orange Juice,soft-drinks,2.00,N
+4008,Costa iced coffee,soft-drinks,1.50,N
+4009,Water,soft-drinks,1.00,N
+4010,Lemonade glass,soft-drinks,1.00,N
+4011,Cordial Splash,soft-drinks,0.50,Y
+4012,Coke splash,soft-drinks,0.50,Y
+4013,Lemonade splash,soft-drinks,0.50,Y
+4014,Red Bull,soft-drinks,2.00,N
+5001,Crisps/Snacks,food,1.00,Y
+5002,Chocolate,food,1.00,Y

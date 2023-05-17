@@ -26,11 +26,13 @@ const csv = fs.readFileSync(`${__dirname}/stock.csv`).toString();
 const jsonRows = csv
   .trim()
   .split("\n")
+  .slice(1)
   .map((row) => {
-    const [id, label, category, priceInPounds] = row.split(",");
+    const [id, label, category, priceInPounds, defaultYN] = row.split(",");
     const priceInPence = parseFloat(priceInPounds) * 100;
+    const defaultTF = defaultYN === "Y" ? "true" : "false";
 
-    return `"${id}": { "label": "${label}", "category": "${category}", "price": ${priceInPence} }`;
+    return `"${id}": { "label": "${label}", "category": "${category}", "price": ${priceInPence}, "defaultView": ${defaultTF} }`;
   });
 
 const complete = template.replace("##INSERT##", jsonRows.join(",\n    "));
