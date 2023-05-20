@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "esbuild ./src/index.tsx --bundle --sourcemap --inject:./react-shim.js --define:process.env.NODE_ENV=\\\"development\\\" --external:*.ttf --outdir=public",
-    "build:prod": "npm run build --minify --define:process.env.NODE_ENV=\\\"production\\\"",
-    "start": "npm run build -- --servedir=public",
+    "esbuild": "esbuild ./src/index.tsx --bundle --sourcemap --inject:./react-shim.js --define:process.env.NODE_ENV=\\\"development\\\" --external:*.ttf --outdir=public",
+    "build:prod": "npm run update-stock && npm run esbuild -- --minify --define:process.env.NODE_ENV=\\\"production\\\"",
+    "start": "npm run update-stock && npm run esbuild -- --servedir=public",
     "test": "echo \"Error: no test specified\" && exit 1",
     "update-stock": "node ./src/data/migrate.js"
   },

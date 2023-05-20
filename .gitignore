@@ -1,4 +1,5 @@
 node_modules
+src/data/stock.json
 public/*
 !public/index.html
 !public/manifest.webmanifest

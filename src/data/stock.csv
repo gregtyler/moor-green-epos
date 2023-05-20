@@ -80,5 +80,7 @@ id,name,category,price,default
 4012,Coke splash,soft-drinks,0.50,Y
 4013,Lemonade splash,soft-drinks,0.50,Y
 4014,Red Bull,soft-drinks,2.00,N
+4015,Fentimans Ginger Beer,soft-drinks,2.00,N
+4016,Fentimans Elderflower,soft-drinks,2.00,N
 5001,Crisps/Snacks,food,1.00,Y
 5002,Chocolate,food,1.00,Y
