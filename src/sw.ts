@@ -20,26 +20,12 @@ self.addEventListener("install", function (e) {
 });
 
 self.addEventListener("fetch", function (event) {
-  if (event.request.mode === "navigate") {
-    // Open the cache
-    event.respondWith(
-      caches.open("epos").then((cache) => {
-        // Go to the network first
-        return fetch(event.request.url)
-          .then((fetchedResponse) => {
-            cache.put(event.request, fetchedResponse.clone());
-
-            return fetchedResponse;
-          })
-          .catch(() => {
-            // If the network is unavailable, get cache
-            return cache.match(event.request.url);
-          });
-      })
-    );
-  } else {
-    return;
-  }
+  event.respondWith(
+    (async function () {
+      const response = await caches.match(event.request);
+      return response || fetch(event.request);
+    })()
+  );
 });
 
 // Clear the cache when sw.js has been changed
