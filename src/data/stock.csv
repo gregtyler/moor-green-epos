@@ -21,7 +21,8 @@ id,name,category,price,default
 1020,Glasshouse Deep Seeded Pint,beer,5.50,N
 1021,Glasshouse Deep Seeded Half,beer,3.00,N
 1022,Guinness West Indies Bottle,beer,3.50,N
-2001,Wine Glass,wine,4.00,Y
+2001,Wine Glass (175ml),wine,4.00,Y
+2005,Wine Glass (250ml),wine,5.50,Y
 2002,Wine Bottle,wine,13.50,N
 2003,Prosecco Small,wine,4.50,N
 2004,Prosecco Large,wine,14.50,N
@@ -42,13 +43,13 @@ id,name,category,price,default
 3015,Jameson Double,spirits,3.50,N
 3016,Jameson Single,spirits,2.50,N
 3017,Brandy Double,spirits,4.00,N
-3018,Brandy Single,spirits,2.50,N
-3019,Jack Daniels Double,spirits,3.75,N
+3018,Brandy Single,spirits,2.75,N
+3019,Jack Daniels Double,spirits,4.00,N
 3020,Jack Daniels Single,spirits,2.75,N
-3021,Southern Comfort Double,spirits,3.50,N
-3022,Southern Comfort Single,spirits,2.50,N
-3023,Captain Morgan Double,spirits,3.50,N
-3024,Captain Morgan Single,spirits,2.50,N
+3021,Southern Comfort Double,spirits,4.00,N
+3022,Southern Comfort Single,spirits,2.75,N
+3023,Captain Morgan Double,spirits,4.00,N
+3024,Captain Morgan Single,spirits,2.75,N
 3025,Baileys Double,spirits,3.50,N
 3026,Tia Maria Double,spirits,3.50,N
 3027,Tia Maria Single,spirits,2.50,N
@@ -60,7 +61,7 @@ id,name,category,price,default
 3033,Jagermeister Single,spirits,2.50,N
 3034,Jagermeister Bomb,spirits,4.00,N
 3035,Hendricks Double,spirits,4.00,N
-3036,Hendricks Single,spirits,3.00,N
+3036,Hendricks Single,spirits,2.75,N
 3037,12 yr Malt Whisky Double,spirits,4.00,N
 3038,12 yr Malt Whisky Single,spirits,3.00,N
 3039,Pink Gin Double,spirits,3.00,N
@@ -69,6 +70,10 @@ id,name,category,price,default
 3042,Woods Rum Single,spirits,3.00,N
 3043,Pimms Double,spirits,3.00,N
 3044,Pimms Single,spirits,2.00,N
+3045,Sambuca Double,spirits,4.00,N
+3046,Sambuca Single,spirits,2.75,N
+3047,Kraken Rum Double,spirits,4.00,N
+3048,Kraken Rum Single,spirits,2.75,N
 4001,Full fat coke,soft-drinks,1.50,N
 4002,Diet Coke,soft-drinks,1.00,N
 4003,Can Pop,soft-drinks,1.00,Y
@@ -87,3 +92,4 @@ id,name,category,price,default
 4016,Fentimans Elderflower,soft-drinks,2.00,N
 5001,Crisps/Snacks,food,1.00,Y
 5002,Chocolate,food,1.00,Y
+5003,Pork Scratchings,food,1.30,Y
