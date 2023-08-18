@@ -11,9 +11,9 @@ if (window.location.search.includes("party")) {
     let price = item.price;
 
     if (item.category === "spirits" || item.label.includes("Half")) {
-      price += 50;
+      price += 25;
     } else if (item.label.includes("Pint")) {
-      price += 100;
+      price += 50;
     }
 
     return {
