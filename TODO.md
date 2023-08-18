@@ -1,9 +1,5 @@
 # TO DO
 
-Immediate:
-
-- Improve items shown on home page
-
 Important
 
 - Log daily total to localStorage
