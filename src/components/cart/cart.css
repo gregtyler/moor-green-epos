@@ -34,3 +34,7 @@
 .c-basket__item + .c-basket__item {
   margin-top: 0.5rem;
 }
+
+.c-basket__item--cash {
+  background-color: var(--md-sys-color-secondary);
+}

@@ -3,12 +3,12 @@ import { CartList } from "../../data/types";
 import { getItem } from "../../data/stock";
 import "./cart.css";
 import Price from "../Price";
-import Button from "../button/Button";
 import IconButton from "../button/IconButton";
 
 interface Props {
   items: CartList;
   onPromptRemove: (id: string) => void;
+  onPromptRemoveCash: () => void;
 }
 
 type ReducedCart = {
@@ -18,7 +18,7 @@ type ReducedCart = {
   quantity: number;
 }[];
 
-const Basket = ({ items, onPromptRemove }: Props) => {
+const Basket = ({ items, onPromptRemove, onPromptRemoveCash }: Props) => {
   const reduced = useMemo(
     () =>
       items.reduce((reduced, id) => {
@@ -35,6 +35,15 @@ const Basket = ({ items, onPromptRemove }: Props) => {
           return [...reduced, { ...item, quantity: 1 }];
         }
       }, [] as ReducedCart),
+    [items]
+  );
+
+  const cash = useMemo(
+    () =>
+      items
+        .filter((x) => x.startsWith("cash:"))
+        .map((x) => parseInt(x.substring(5), 10))
+        .reduce((sum, x) => sum + x, 0),
     [items]
   );
 
@@ -59,6 +68,27 @@ const Basket = ({ items, onPromptRemove }: Props) => {
           </li>
         );
       })}
+
+      {cash ? (
+        <li className="c-basket__item c-basket__item--cash">
+          <div className="u-flex-filler">
+            <div>
+              <strong>Misc</strong>
+            </div>
+            <div>
+              <Price value={cash} />
+            </div>
+          </div>
+
+          <IconButton
+            icon="remove"
+            variant="tonal"
+            onClick={() => onPromptRemoveCash()}
+          />
+        </li>
+      ) : (
+        ""
+      )}
     </ol>
   );
 };
