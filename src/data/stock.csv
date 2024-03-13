@@ -21,6 +21,8 @@ id,name,category,price,default
 1020,Glasshouse Deep Seeded Pint,beer,5.50,N
 1021,Glasshouse Deep Seeded Half,beer,3.00,N
 1022,Guinness West Indies Bottle,beer,3.50,N
+1023,Staropramen Pint,beer,5.00,Y
+1024,Staropramen Half,beer,2.75,Y
 2001,Wine Glass (175ml),wine,4.00,Y
 2005,Wine Glass (250ml),wine,5.50,Y
 2002,Wine Bottle,wine,13.50,N
