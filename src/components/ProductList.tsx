@@ -5,6 +5,7 @@ import Card from "./card/Card";
 import CardGrid from "./card/CardGrid";
 import { FilterNames } from "./App";
 import Icon from "./Icon";
+import CashList from "./CashList";
 
 interface Props extends HTMLAttributes<HTMLElement> {
   filter: FilterNames;
@@ -30,7 +31,9 @@ const getCategoryIcon = (category: string): ReactNode => {
 const ProductList = ({ filter, onAddItem, ...props }: Props) => {
   const stock = getStock(filter);
 
-  return (
+  return filter === "cash" ? (
+    <CashList onAddItem={onAddItem}></CashList>
+  ) : (
     <div {...props}>
       <CardGrid>
         {stock.map((item) => (

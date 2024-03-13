@@ -6,6 +6,7 @@ import Button from "../button/Button";
 import "./cart.css";
 import Basket from "./Basket";
 import { getItem } from "../../data/stock";
+import IconButton from "../button/IconButton";
 
 interface Props {
   value: CartList;
@@ -19,6 +20,9 @@ type ModalData =
   | {
       type: "REMOVE";
       id: string;
+    }
+  | {
+      type: "REMOVE_CASH";
     };
 
 const Cart = ({ value, onSetCart }: Props) => {
@@ -27,6 +31,10 @@ const Cart = ({ value, onSetCart }: Props) => {
   const total = useMemo(
     () =>
       value.reduce((agg, x) => {
+        if (x.startsWith("cash:")) {
+          return agg + parseInt(x.substring(5), 10);
+        }
+
         const item = getItem(x);
         return agg + (item ? item.price : 0);
       }, 0),
@@ -40,6 +48,10 @@ const Cart = ({ value, onSetCart }: Props) => {
     }
   };
 
+  const removeCash = () => {
+    onSetCart(value.filter((x) => !x.startsWith("cash:")));
+  };
+
   const pay = () => {
     onSetCart([]);
   };
@@ -49,6 +61,7 @@ const Cart = ({ value, onSetCart }: Props) => {
       <Basket
         items={value}
         onPromptRemove={(id) => setModal({ type: "REMOVE", id })}
+        onPromptRemoveCash={() => setModal({ type: "REMOVE_CASH" })}
       />
 
       <div className="c-cart__summary">
@@ -77,6 +90,18 @@ const Cart = ({ value, onSetCart }: Props) => {
           <p>
             Do you want to void one "{getItem(modal.id)?.label || modal.id}"?
           </p>
+        </Modal>
+      )}
+      {modal.type === "REMOVE_CASH" && (
+        <Modal
+          headline="Remove misc"
+          onConfirm={() => {
+            removeCash();
+            setModal({ type: "" });
+          }}
+          onCancel={() => setModal({ type: "" })}
+        >
+          <p>Do you want to reset the misc amount?</p>
         </Modal>
       )}
       {modal.type === "PAY" && (

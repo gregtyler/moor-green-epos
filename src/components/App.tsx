@@ -5,7 +5,7 @@ import { CartList } from "../data/types";
 import NavigationTray from "./navigation/NavigationTray";
 import { categories } from "../data/stock";
 
-export type FilterNames = "default" | keyof typeof categories;
+export type FilterNames = "default" | "cash" | keyof typeof categories;
 
 const App = () => {
   const [filter, setFilter] = useState("default" as FilterNames);

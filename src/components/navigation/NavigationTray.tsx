@@ -34,6 +34,14 @@ const NavigationTray = ({ value, onUpdate }: Props) => {
           {category.label}
         </span>
       ))}
+      <span
+        className={`c-navigation-tray__item ${
+          value === "cash" ? "c-navigation-tray__item--active" : ""
+        }`}
+        onClick={() => onUpdate("cash")}
+      >
+        <Icon aria-label="Cash">currency_pound</Icon>
+      </span>
     </nav>
   );
 };
