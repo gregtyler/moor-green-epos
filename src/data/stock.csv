@@ -80,8 +80,8 @@ id,name,category,price,default
 4002,Diet Coke,soft-drinks,1.00,N
 4003,Can Pop,soft-drinks,1.00,Y
 4004,Tonic Water,soft-drinks,1.25,Y
-4005,J20,soft-drinks,2.00,Y
-4006,Appletiser,soft-drinks,2.00,N
+4005,J20,soft-drinks,2.50,Y
+4006,Appletiser,soft-drinks,2.50,N
 4007,Orange Juice,soft-drinks,2.00,N
 4008,Costa iced coffee,soft-drinks,1.50,N
 4009,Water,soft-drinks,1.00,N
@@ -90,8 +90,9 @@ id,name,category,price,default
 4012,Coke splash,soft-drinks,0.50,Y
 4013,Lemonade splash,soft-drinks,0.50,Y
 4014,Red Bull,soft-drinks,2.00,N
-4015,Fentimans Ginger Beer,soft-drinks,2.00,N
-4016,Fentimans Elderflower,soft-drinks,2.00,N
+4015,Fentimans Ginger Beer,soft-drinks,2.50,N
+4016,Fentimans Elderflower,soft-drinks,2.50,N
+4017,Iced Tea,soft-drinks,1.50,N
 5001,Crisps/Snacks,food,1.00,Y
 5002,Chocolate,food,1.00,Y
 5003,Pork Scratchings,food,1.30,Y
