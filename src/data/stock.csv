@@ -23,6 +23,7 @@ id,name,category,price,default
 1022,Guinness West Indies Bottle,beer,3.50,N
 1023,Staropramen Pint,beer,5.00,Y
 1024,Staropramen Half,beer,2.75,Y
+1025,Bathams Trad,beer,4.25,N
 2001,Wine Glass (175ml),wine,4.00,Y
 2005,Wine Glass (250ml),wine,5.50,Y
 2002,Wine Bottle,wine,13.50,N
@@ -96,3 +97,4 @@ id,name,category,price,default
 5001,Crisps/Snacks,food,1.00,Y
 5002,Chocolate,food,1.00,Y
 5003,Pork Scratchings,food,1.30,Y
+5004,Magnum,food,2.00,N
