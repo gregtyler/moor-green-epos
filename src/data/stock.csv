@@ -10,7 +10,7 @@ id,name,category,price,default
 1009,Trad Pint,beer,3.75,Y
 1010,Trad Half,beer,2.00,Y
 1011,Glasshouse Can,beer,4.50,N
-1012,Bathams Best,beer,3.00,Y
+1012,Bathams Bottle,beer,3.00,Y
 1013,London Pride,beer,3.00,N
 1014,Mild Can,beer,3.00,N
 1015,Red Stripe,beer,3.00,Y
@@ -23,7 +23,8 @@ id,name,category,price,default
 1022,Guinness West Indies Bottle,beer,3.50,N
 1023,Staropramen Pint,beer,5.00,Y
 1024,Staropramen Half,beer,2.75,Y
-1025,Bathams Trad,beer,4.25,N
+1025,Bathams Trad Pint,beer,4.75,Y
+1026,Bathams Tras Half,beer,2.50,Y
 2001,Wine Glass (175ml),wine,4.00,Y
 2005,Wine Glass (250ml),wine,5.50,Y
 2002,Wine Bottle,wine,13.50,N
