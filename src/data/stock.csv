@@ -24,7 +24,7 @@ id,name,category,price,default
 1023,Staropramen Pint,beer,5.00,Y
 1024,Staropramen Half,beer,2.75,Y
 1025,Bathams Trad Pint,beer,4.75,Y
-1026,Bathams Tras Half,beer,2.50,Y
+1026,Bathams Trad Half,beer,2.50,Y
 2001,Wine Glass (175ml),wine,4.00,Y
 2005,Wine Glass (250ml),wine,5.50,Y
 2002,Wine Bottle,wine,13.50,N
