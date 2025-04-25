@@ -1,10 +1,10 @@
 id,name,category,price,default
 1001,Glasshouse Pint,beer,5.00,Y
 1002,Glasshouse Half,beer,2.75,Y
-1003,Thatcher’s Pint,beer,3.00,Y
-1004,Thatcher’s Half,beer,1.75,Y
-1005,Carling Pint,beer,3.00,Y
-1006,Carling Half,beer,1.75,Y
+1003,Thatcher’s Pint,beer,3.25,Y
+1004,Thatcher’s Half,beer,2.00,Y
+1005,Carling Pint,beer,3.25,Y
+1006,Carling Half,beer,2.00,Y
 1007,Guinness Pint,beer,3.75,Y
 1008,Guinness Half,beer,2.25,Y
 1009,Trad Pint,beer,3.75,Y
