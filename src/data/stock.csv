@@ -96,7 +96,7 @@ id,name,category,price,default
 4016,Fentimans Elderflower,soft-drinks,2.50,N
 4017,Lipton's Iced Tea,soft-drinks,1.50,N
 5001,Crisps/Snacks,food,1.00,Y
-5002,Big Crisps,1.25,Y
+5002,Big Crisps,food,1.25,Y
 5003,Chocolate,food,1.00,Y
 5004,Pork Scratchings,food,1.30,Y
 5005,Magnum,food,2.00,N
